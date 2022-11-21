@@ -1,2 +1,54 @@
 /* font-family: 'Catamaran', sans-serif; */
 /* font-family: 'Martel', serif; */
+
+
+:root {
+    --color-bg: #FFF0EB;
+    --color-footer: #EBD4D1;
+    --color-footer2: #DFBDB9;
+    --color-text: #61504B;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Martel', serif;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Catamaran', sans-serif;
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/bg header accueil.png");
+    position: relative;
+}
+
+.barreHeader {
+    width: min(1240px,80%);
+    background-color: var(--color-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    right: 10%;
+    top: 75px;
+}
+
+#logoAhBas {
+    height: 75px;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.barreHeader nav a, .iconHeader a {
+    margin: 0 10px;
+}
