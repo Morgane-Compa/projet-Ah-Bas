@@ -7,6 +7,7 @@
     --color-footer: #EBD4D1;
     --color-footer2: #DFBDB9;
     --color-text: #61504B;
+    --color-clair: #FFF9F6;
 }
 
 body {
@@ -21,7 +22,17 @@ h1, h2, h3, h4{
     font-family: 'Catamaran', sans-serif;
 }
 
+h2 {
+    font-size: 48px;
+}
 
+main {
+    background-color: var(--color-bg);
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 
@@ -49,6 +60,7 @@ header {
     width: 70%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 #logoAhBas {
@@ -107,12 +119,99 @@ a {
 }
 
 
+/* Mon main */
+
+/* 1ere section */
+.newArticles {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.newArticles div {
+    background-color: var(--color-clair);
+    display: flex;
+    gap: 25px;
+    padding: 39px;
+}
+
+.arrow {
+    width: 111px;
+    height: 111px;
+}
+
+/* 2eme section */
+
+.collections {
+    height: 685px;
+    display: flex;
+    align-items: center;
+}
+
+.collections div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+}
 
 
+.extravagant {
+    background-color: #BA8A70;
+    align-self: flex-start;
+}
+
+.classic {
+    width: 35%;
+    background-color: #EBD4D1;
+}
+
+.classic img {
+    width: 100%;
+}
+
+.casual {
+    align-self: flex-end;
+    background-color: #762625;
+}
+
+/* section journal */
+.journal {
+    width: 70%;
+    background-color: var(--color-clair);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.journal img {
+    padding: 25px;
+}
+
+.journal h3 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.journal p {
+    font-size: 24px;
+}
 
 
+/* end */
 
-
+.desktop {
+    width: min(1270px,80%);
+}
+.phone {
+    display: none;
+}
 
 /* footer */
 footer {
@@ -159,6 +258,7 @@ footer {
 
 @media (max-width: 990px) {
 
+    /* header */
     .navLink {
         display: none;
     }
@@ -171,6 +271,23 @@ footer {
         display: block;
     }
 
+
+    /* Le main */
+
+    .journal {
+        width: 100%;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .phone {
+        display: block;
+    }
+
+
+    /* footer */
     .footerText {
         flex-direction: column;
     }
