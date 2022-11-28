@@ -223,7 +223,8 @@ footer {
 }
 
 .norme{
-    margin: 15% 20%;
+    margin: auto;
+    margin-bottom: 15%;
     width: 60%;
 }
 
@@ -298,3 +299,16 @@ button{
     background-color: #DFBDB9;
     border: none;
 }
+
+.autreProduit{
+    height: 500px;
+}
+
+.autreProduit div{
+    background: white;
+    width: 70%;
+    margin: auto;
+    margin-top: 15%;
+    gap: 25px;
+}
+
