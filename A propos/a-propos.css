@@ -1,7 +1,3 @@
-/* font-family: 'Catamaran', sans-serif; */
-/* font-family: 'Martel', serif; */
-
-
 :root {
     --color-bg: #FFF0EB;
     --color-footer: #EBD4D1;
@@ -11,23 +7,25 @@
 }
 
 body {
+    background-color: var(--color-bg);
     margin: 0;
     padding: 0;
     font-family: 'Martel', serif;
     color: var(--color-text);
     box-sizing: border-box;
+    
 }
 
 h1, h2, h3, h4{
     font-family: 'Catamaran', sans-serif;
 }
 
-h2 {
+h1, h2 {
     font-size: 48px;
 }
 
 main {
-    background-color: var(--color-bg);
+    background-color: var(--color-clair);
     padding: 20px 0;
     display: flex;
     flex-direction: column;
@@ -41,7 +39,7 @@ main {
 header {
     width: 100%;
     height: 957px;
-    background-image: url("img/bg header accueil.png");
+    background-image: url("img/header a propos.png");
     position: relative;
 }
 
@@ -118,113 +116,57 @@ a {
     height: 90vh;
 }
 
+/* Le main */
 
-
-
-
-/* Mon main */
-
-/* 1ere section */
-.newArticles {
+.valeurs {
+    
+    background-color: white;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
-.newArticles div {
-    background-color: var(--color-clair);
-    display: flex;
-    gap: 25px;
-    padding: 39px;
-}
-
-.arrow {
-    width: 111px;
-    height: 111px;
-}
-
-
-
-
-/* 2eme section */
-
-.collections {
-    height: 685px;
-    display: flex;
-    align-items: center;
-}
-
-.collections div {
+.valeurs div {
+    width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    color: white;
-    font-size: 32px;
-    font-weight: 600;
-}
-
-
-.extravagant {
-    background-color: #BA8A70;
-    align-self: flex-start;
-}
-
-.classic {
-    width: 35%;
-    background-color: #EBD4D1;
-}
-
-.classic img {
-    width: 100%;
-}
-
-.casual {
-    align-self: flex-end;
-    background-color: #762625;
-}
-
-
-
-
-/* section journal */
-.journal {
-    background-color: var(--color-clair);
-    display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
+    
 }
 
-.journal img {
-    padding: 25px;
-    width: 45%;
-}
-
-.journal h3 {
+.valeurs p {
+    font-weight: bold;
     font-size: 48px;
-    font-weight: 700;
+    font-family: 'Catamaran', sans-serif;
+   
 }
 
-.journal p {
-    font-size: 24px;
-}
-
-.journal div {
+.valeurs img {
     width: 50%;
+    
+}
+
+.team .valeurs {
+    margin: 70px;
+}
+
+.member {
+    padding: 40px;
+}
+
+.member p{
+    font-family: 'Martel', serif; 
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.member h3 {
+    font-weight: bold;
+    font-size: 36px;
 }
 
 
-/* end */
-
-.desktop {
-    width: min(1270px,80%);
-}
-.phone {
-    display: none;
-}
 
 /* footer */
 footer {
@@ -267,8 +209,6 @@ footer {
 
 
 
-/* responsive */
-
 @media (max-width: 990px) {
 
     /* header */
@@ -284,21 +224,23 @@ footer {
         display: block;
     }
 
+    /* Main */
 
-    /* Le main */
+    /* section Valeurs */
+    .valeurs {
+        flex-direction: column;
+    }
 
-    .journal {
+    .valeurs img {
         width: 100%;
     }
 
-    .desktop {
-        display: none;
+    .valeurs div {
+        width: 100%;
     }
 
-    .phone {
-        display: block;
-    }
 
+    /* section members */
 
     /* footer */
     .footerText {
@@ -309,5 +251,4 @@ footer {
         width: 100%;
         padding: 0;
     }
-
 }
