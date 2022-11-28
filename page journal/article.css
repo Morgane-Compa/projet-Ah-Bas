@@ -1,0 +1,189 @@
+:root {
+    --color-bg: #FFF0EB;
+    --color-footer: #EBD4D1;
+    --color-footer2: #DFBDB9;
+    --color-text: #61504B;
+    --color-clair: #FFF9F6;
+}
+
+body {
+    background-color: var(--color-bg);
+    margin: 0;
+    padding: 0;
+    font-family: 'Martel', serif;
+    color: var(--color-text);
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Catamaran', sans-serif;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+main {
+    background-color: var(--color-clair);
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+/* header */
+header {
+    width: 100%;
+    height: 957px;
+    background-image: url("img/libre beach body.png");
+    position: relative;
+}
+
+.barreHeader {
+    width: min(1240px,80%);
+    background-color: var(--color-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    right: 10%;
+    top: 75px;
+}
+
+.navLink {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logoAhBas {
+    height: 75px;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.barreHeader nav a, .iconHeader a {
+    margin: 0 10px;
+}
+
+
+/* menu burger */
+
+.menuBurger {
+    display: none;
+}
+
+.menuBurger{
+    cursor: pointer;
+    width: 40px;
+    /* margin: 31px 16px 0 0; */
+    margin-right: 30px;
+
+}
+
+.menuBurger span {
+    width: 40px;
+    height: 6px;
+    margin: 5px;
+    border-radius: 61px;
+    background-color: var(--color-footer2);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.menuBurger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menuBurger.active span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.menuBurger.active span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+.active {
+    height: 90vh;
+}
+
+/* Le main */
+
+
+
+
+/* footer */
+footer {
+    background-color: var(--color-footer);
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerText {
+    width: 100%;
+    padding: 60px 8% 75px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.empty {
+    width: 12.2%;
+    background-color: var(--color-footer2);
+    
+}
+
+.semibold {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.barreEmail {
+    background-color: var(--color-bg);
+    border: 2px solid var(--color-footer2);
+}
+
+.boutton {
+    background-color: var(--color-footer2);
+    border: none;
+    color: var(--color-text);
+    padding: 4px;
+}
+
+
+
+
+@media (max-width: 990px) {
+
+    /* header */
+    .navLink {
+        display: none;
+    }
+
+    .menuBurger{
+        display: block;
+    }
+
+    .menuBurger span {
+        display: block;
+    }
+
+
+
+    /* footer */
+    .footerText {
+        flex-direction: column;
+    }
+
+    footer form input {
+        width: 100%;
+        padding: 0;
+    }
+}
