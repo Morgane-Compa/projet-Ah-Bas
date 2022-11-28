@@ -233,7 +233,6 @@ main {
     justify-content:space-between;
     
     align-items: center;
-    padding: 0;
 
 }
 
@@ -281,8 +280,7 @@ main {
     padding: 10px;
 }
 
-.underline,
-h3 {
+.underline, h3 {
     border-bottom: #2A211E 1px solid;
 }
 
@@ -314,6 +312,9 @@ button {
     padding: 15px 0;
     font-family: 'Noto Sans Limbu', sans-serif;
     width: 800px;
+    /* width: clamp(40vw, 30vw, 80vw); */
+    /* min-width: 600px; */
+
     margin-left: 0%;
     
     
@@ -397,22 +398,13 @@ footer {
 
 
 /* recap mobile */
-.flex-recap{
-    align-items: center;
-    align-self: center;
-    align-content: center;
-    /* background: green; */
 
-}
 
 #recap{
     height: 100px;
     width: 100%;
     background: #F6E6CB;
     display: none;
-    align-items: center;
-    align-self: center;
-    align-content: center;
     /* background: #FF8787; */
 
 
@@ -420,13 +412,8 @@ footer {
 }
 .recap{
     flex-direction: column;
-    width: min(600px);
-    justify-content: center;
-    justify-self: center;
-    align-content: center;
-    justify-self: center;
-    justify-items: center;
-    
+    width: 100%;
+
 
 }
 
@@ -434,6 +421,17 @@ footer {
 .premiere-ligne{
     margin: 14px, 17px;
 }
+
+.deuxieme-ligne{
+    gap:130px
+}
+
+.logo-mobile{
+    display: none;
+    text-align: center;
+
+}
+
 
 /* footer */
 @media (max-width: 895px){
@@ -452,4 +450,34 @@ footer {
         display:block;
 
     }
+
+    #info-article, #total{
+        display: none;
+    }
+
+    .flex-logo{
+        display: none;
+    }
+    .logo-mobile{
+        display: block;
+        
+    }
 }
+
+@media(max-width: 1000px){
+    .mobile-column{
+        flex-direction: column;
+        margin: 0;
+
+    }
+}
+
+@media(max-width: 1000px){
+    button{
+        width: 650px;
+        
+
+    }
+
+}
+

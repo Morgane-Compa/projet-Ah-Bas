@@ -11,13 +11,21 @@
 
 <body>
     <!-- Logo -->
-    <header class="flex-logo">
+    <header class="flex-logo flex">
         <a href="#"><img src="img/vraiLogo.png" alt="logo"></a>
     </header>
+
+    <!-- logo mobile -->
+    <header class="flex-logo logo-mobile">
+        <a href="#">
+            <h1>Ah-bas!</h1>
+        </a>
+    </header>
+
     <!-- recapitulatif mobile -->
 
-    <section id="recap" class="flex-recap">
-        <div class="recap flex-recap">
+    <section id="recap">
+        <div class="recap">
             <div class="premiere-ligne flex line-height">
                 <p>RÉCAPITULATIF (n article)</p>
                 <p>+</p>
@@ -97,14 +105,12 @@
 
 
             <!-- livraison -->
-            <p id="liv" class="underline line-height title">3. MODE DE LIVRAISON</p><br>
+            <p id="liv" class="underline line-height title">3. MODE DE LIVRAISON</p>
             <div class="livraison">
                 <form method="get" action="#">
                     <p class="mention">Choisissez une méthode de livraison pour votre commande</p>
-                    <br>
                     <div class="underline line-height"><label><input type="radio" name="livraison"
                                 value="standard">&nbsp;Livraison standard offerte</label></div>
-                    <br>
                     <div class="underline line-height"><label><input type="radio" name="livraison"
                                 value="expresse">&nbsp;Livraison expresse</label></div>
                 </form>
@@ -122,9 +128,9 @@
                     informations sont protégées à l’aide de la technologie Secure Sockets Layer (SSL).</p>
 
                 <form method="get" action="#">
-                    <div class="flex underline">
+                    <div class="flex underline mobile-column">
                         <br>
-                        <div class="line-height">
+                        <div class="line-height small-button">
                             <label>
                                 <button class="small-button">
                                     <input type="radio" name="livraison" value="standard">Cartes de paiement
@@ -135,13 +141,13 @@
 
                         <div class="line-height small-button">
                             <label>
-
                                 <button class="small-button s-padding">
                                     <div class="flex">
                                         <div class="flex paypal">
                                             <input type="radio" name="livraison" value="expresse">
 
                                             <img src="img/paypal-logo-vector.svg" alt="Paypal">
+                                            <br>
                                         </div>
                                     </div>
                                 </button>

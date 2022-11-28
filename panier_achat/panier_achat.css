@@ -206,6 +206,8 @@ button:hover{
 }
 
 
+
+
 /* TOTAL */
 #total{
     width: min(472px, 100%);
@@ -353,7 +355,11 @@ footer {
 
 
 
+.logo-mobile{
+    display: none;
+    text-align: center;
 
+}
 
 
 /* MEDIA */
@@ -398,11 +404,31 @@ footer {
     
 }
 
+@media (max-width: 800px){
 
+
+    .flex-logo{
+        display: none;
+    }
+    .logo-mobile{
+        display: block;
+
+
+        
+    }
+}
 
 @media (max-width: 895px){
     #total{
         line-height: none;
+    }
+}
+
+@media (max-width: 895px){
+    .small-button > .flex > .paypal{
+        margin:0;
+        line-height: none;
+
     }
 }
 
