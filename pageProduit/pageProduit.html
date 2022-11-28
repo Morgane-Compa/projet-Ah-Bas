@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ah - Bas! Collection de bas </title>
-    <link rel="stylesheet" href="styleCategorie.css">
-    <link rel="stylesheet" href="styleCategorieMobile.css">
+    <title>Collant Extravagant - Ah - Bas !</title>
+    <link rel="stylesheet" href="styleProduit.css">
+    <link rel="stylesheet" href="styleProduitMobile.css">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,19 +21,18 @@
         <header>
             <div class="barreHeader">
 
-                <a href="file:///C:/Users/Momowizzard/Desktop/projet-Ah-Bas/index.html"><img id="logoAhBas" src="img\vraiLogo.png" alt="logo du site"></a>
-
+                <img id="logoAhBas" src="img/vraiLogo.png" alt="logo du site">
 
                 <nav>
-                    <a href="file:///C:/Users/Momowizzard/Desktop/projet-Ah-Bas/index.html">Accueil</a>
-                    <a href="file:///C:/Users/Momowizzard/Desktop/projet-Ah-Bas/pageCat%C3%A9gorie/pageCategorie.html">Collection</a>
+                    <a href="#">Accueil</a>
+                    <a href="#">Collection</a>
                     <a href="#">A propos</a>
-                    <a href="file:///C:/Users/Momowizzard/Desktop/projet-Ah-Bas/page%20journal/journal.html#">Les Ah-Bah!</a>
+                    <a href="#">Contact</a>
                 </nav>
 
                 <div class="iconHeader flex">
                     <a href="#" title="Mon compte"><img src="icon\icon compte.png" alt="icone du compte"></a>
-                    <a href="file:///C:/Users/Momowizzard/Desktop/projet-Ah-Bas/panier_achat/panier_achat.html" title="Mon panier"><img src="icon\icon panier.png" alt="icone panier"></a>
+                    <a href="#" title="Mon panier"><img src="icon\icon panier.png" alt="icone panier"></a>
                     <a href="#" title="Rechercher"><img src="icon\icon loupe.png" alt="icone rechercher"></a>
                 </div>
 
@@ -71,23 +70,40 @@
             </nav>
         </section>
 
-        <section class="categorie flex">
-            <a href="#"><img src="img/imgProduit/collection (9).png" alt="collant exentrique"></a>
-            <a href="#"><img src="img/imgProduit/collection (8).png" alt="collant"></a>
-            <a href="#"><img src="img/imgProduit/imageProduit3.png" alt="collant"></a>
-            <a href="#"><img src="img/imgProduit/ligne.png" alt="collant"></a>
-            <a href="#"><img src="img/imgProduit/imageProduit4.png" alt="collant"></a>
-            <a href="#"><img src="img/imgProduit/imageProduit5.png" alt="collant"></a>
-            <a href="#"><img src="img/imgProduit/imageProduit6.png" alt="collant"></a>
-            <a href="#"><img src="img/imgProduit/collection (7).png" alt="collant"></a>
-            <a href="#"><img src="img/imgProduit/collection (6).png" alt="collant"></a>
-            <a href="#"><img src="img/imgProduit/image 68.png" alt="collant"></a>
-            <a href="#"><img src="img/imgProduit/collection (4).png" alt="collant"></a>
-            <a href="#"><img src="img/imgProduit/collection (3).png" alt="collant"></a>
-            <a href="#"><img src="img/imgProduit/collection (2).png" alt="collant"></a>
-            <a href="#"><img src="img/imgProduit/collection (1).png" alt="collant"></a>
-            <a href="#"><img src="img/imgProduit/collection.png" alt="collant"></a>
+        <section class="produit">
+            <div class="flex presentationProduit">
+                <a href="#"><img class="presentation" src="img/imgProduit/collection (9).png"
+                        alt="collant exentrique"></a>
+                <div class="text flex column">
+                    <h3>Nom du Produit</h3>
+                    <div class="flex">
+                        <a href="#"><div class="cercleRed"></div></a>
+                        <a href="#"><div class="cerclePink"></div></a>
+                        <a href="#"><div class="cercleYellow"></div></a>
+                        <a href="#"><div class="cercleBlue"></div></a>
+                    </div>
+                    <p>Taille</p>
+                    <p>Prix €</p>
+                    <button>COMMANDER</button>
+                </div>
+            </div>
+            <div class="flex collant">
+                <a href="#"><img src="img/imgProduit/présentaionProduit (1).png" alt="collant exentrique"></a>
+                <a href="#"><img src="img/imgProduit/présentaionProduit.png" alt="collant exentrique"></a>
+                <div class="description">
+                    <p> <b>Description : </b></p>
+                    <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, dolorum? Ea eveniet culpa,
+                        tenetur sunt perspiciatis delectus minima consequuntur cumque, eius odit vitae reiciendis.
+                        Libero reprehenderit vitae minima delectus ratione.
+                        Quo exercitationem ex hic consequatur animi, nobis suscipit amet sit magni! Illo debitis autem
+                        sint similique ipsum consequuntur soluta repellat esse veritatis, facere labore odit nihil porro
+                        fugiat velit officia!
+                    </P>
+                </div>
+            </div>
         </section>
+
+        
 
         <section class="norme">
             <img src="img/Component 2.png" alt="">
@@ -102,14 +118,14 @@
 
         <div class="footerText">
             <div>
-                <p class="semibold"><a href="file:///C:/Users/Momowizzard/Desktop/projet-Ah-Bas/pageCat%C3%A9gorie/pageCategorie.html">Collections :</a></p>
+                <p class="semibold">Collections :</p>
                 <p><a href="#">Casual</a></p>
                 <p><a href="#">Exentrique</a></p>
                 <p><a href="#">Les Basiques</a></p>
             </div>
             <div>
                 <p class="semibold">Restez connectés :</p>
-                <p><a href="file:///C:/Users/Momowizzard/Desktop/projet-Ah-Bas/page%20journal/journal.html">Les Ah-Bas !</a></p>
+                <p><a href="#">Les Ah-Bas !</a></p>
                 <p><a href="#">Notre Newsletter :</a></p>
                 <form>
                     <input class="barreEmail" type="email" name="email" placeholder="Email">
@@ -119,9 +135,9 @@
             <div>
                 <p class="semibold">La marque :</p>
                 <p><a href="#">A propos</a></p>
-                <p><a href="file:///C:/Users/Momowizzard/Desktop/projet-Ah-Bas/page%20legale/mentionlegales.html">Politique de confidentialité</a></p>
-                <p><a href="file:///C:/Users/Momowizzard/Desktop/projet-Ah-Bas/page%20legale/politique%20de%20confidentialit%C3%A9.html">Mentions légales</a></p>
-                <p><a href="file:///C:/Users/Momowizzard/Desktop/projet-Ah-Bas/page%20legale/cgv.html">Conditions générales de ventes</a></p>
+                <p><a href="#">Politique de confidentialité</a></p>
+                <p><a href="#">Mentions légales</a></p>
+                <p><a href="#">Conditions générales de ventes</a></p>
             </div>
             <div>
                 <p class="semibold">Ou nous contacter :</p>
@@ -129,7 +145,6 @@
                 <p class="semibold">Nos résaux :</p>
             </div>
         </div>
-        
     </footer>
     <script src="categorie.js"></script>
 </body>
