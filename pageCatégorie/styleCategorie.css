@@ -27,9 +27,9 @@ h1,h2,h3{
     font-family: 'Catamaran', sans-serif;
 }
 
- div,section,main,header,nav{
+ /* div,section,main,header,nav{
     /* border: 2px solid black; */
-}
+/* } */
 
 main{
     width: min(1536px,100%);
