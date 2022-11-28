@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT | Ah - Bas !</title>
+    <link rel="stylesheet" href="pageContact.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martel:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="barreHeader">
+
+                <img id="logoAhBas" src="img/vraiLogo.png" alt="logo du site">
+
+                <nav>
+                    <a href="#">Accueil</a>
+                    <a href="#">Collection</a>
+                    <a href="#">A propos</a>
+                    <a href="#">Contact</a>
+                </nav>
+
+                <div class="iconHeader flex">
+                    <a href="#" title="Mon compte"><img src="icon\icon compte.png" alt="icone du compte"></a>
+                    <a href="#" title="Mon panier"><img src="icon\icon panier.png" alt="icone panier"></a>
+                    <a href="#" title="Rechercher"><img src="icon\icon loupe.png" alt="icone rechercher"></a>
+                </div>
+
+            </div>
+        </header>
+
+        <section class="titreContact flex">
+            <div class="titre-contact">
+                <h1>Nous Contacter</h1>
+                <p>Le Service Client est disponible du Lundi au Vendredi de 10h à 21h et le Samedi de 10h à 19h.</p>
+            </div>
+        </section>
+
+        <section class="formulaire">
+            <form>
+                <div>
+                    <label for="name">Nom*</label>
+                    <input type="text" id="name" name="user_name">
+                    <label for="firstName">Prénom*</label>
+                    <input type="text" id="firstName" name="user_firstName">
+                </div>
+                <div>
+                    <label for="phone">Téléphone*</label>
+                    <input class="flex column" type="number" id="phone" name="user_phone">
+                </div>
+                <div>
+                    <label for="mail">E-mail*</label>
+                    <input class="flex column"type="email" id="mail" name="user_mail">
+                </div>
+                <div class="nav column">
+                    <label for="object"><span>Objet</span></label>
+                    <input type="checkbox" id="object" name="user_object">
+                    <ul class="slide">
+                        <li><a href="#">Informations sur les produits</a></li>
+                        <li><a href="#">Information Boutique</a></li>
+                        <li><a href="#">Boutique en ligne & site internet</a></li>
+                        <li><a href="#">Support après-vente</a></li>
+                        <li><a href="#">Retour et Remboursement</a></li>
+                        <li><a href="#">Autres</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <label for="msg">Message*</label>
+                    <textarea class="flex column" id="msg" name="user_message"></textarea>
+                </div>
+            </form>
+
+        </section>
+
+        <section class="norme">
+            <img src="img/Component 2.png" alt="">
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="empty"></div>
+
+        <div class="footerText">
+            <div>
+                <p class="semibold">Collections :</p>
+                <p><a href="#">Casual</a></p>
+                <p><a href="#">Exentrique</a></p>
+                <p><a href="#">Les Basiques</a></p>
+            </div>
+            <div>
+                <p class="semibold">Restez connectés :</p>
+                <p><a href="#">Les Ah-Bas !</a></p>
+                <p><a href="#">Notre Newsletter :</a></p>
+                <form>
+                    <input class="barreEmail" type="email" name="email" placeholder="Email">
+                    <input class="boutton" type="submit">
+                </form>
+            </div>
+            <div>
+                <p class="semibold">La marque :</p>
+                <p><a href="#">A propos</a></p>
+                <p><a href="#">Politique de confidentialité</a></p>
+                <p><a href="#">Mentions légales</a></p>
+                <p><a href="#">Conditions générales de ventes</a></p>
+            </div>
+            <div>
+                <p class="semibold">Ou nous contacter :</p>
+                <p><a href="#">Contact</a></p>
+                <p class="semibold">Nos résaux :</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
