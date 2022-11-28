@@ -51,7 +51,7 @@ h1,h2,h3,h4 {
 
 /* header */
 header {
-    height: 70vh;
+    height: 105vh;
     background: url("img/enteteCategorie.png") no-repeat;
     background-size: cover;
 }
@@ -80,6 +80,10 @@ a {
 .barreHeader nav a,
 .iconHeader a {
     margin: 0 10px;
+}
+
+.iconHeader{
+    display: flex;
 }
 
 .menu nav{
